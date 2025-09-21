@@ -1,21 +1,18 @@
-# logistic-regression-classification
-An example of data classification using logistic regression. Visualization of the class boundary. 
-
 # Logistic Regression Classification
 
-Пример классификации данных с использованием логистической регрессии.  
-В этом проекте я использовал **scikit-learn** для построения модели и **matplotlib** для визуализации границ классов.
+An example of data classification using logistic regression.  
+In this project, I used **scikit-learn** to build the model and **matplotlib** to visualize the class boundaries.
 
-## 📂 Содержимое проекта
-- `Logistic_Regression.py` — код для генерации данных, обучения модели и построения графика.
-- Визуализация границы классов (см. ниже пример кода).
+## 📂 Project contents
+- `Logistic_Regression.py` — code for generating data, training the model, and plotting the graph.
+- Visualization of class boundaries (see code example below).
 
-## 🚀 Используемые библиотеки
+## 🚀 Libraries used
 - numpy
 - matplotlib
 - scikit-learn
 
-## 🔑 Основной код
+## 🔑 Main code
 ```python
 import matplotlib.pyplot as plt
 import numpy as np
@@ -28,8 +25,8 @@ X, y = make_classification(
     n_classes=2,
     n_redundant=0,
     n_informative=2,
-    random_state=42
-)
+    random_state=42)
+
 
 model = LogisticRegression(max_iter=1000, random_state=42)
 model = model.fit(X, y)
